@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+</head>
+<body>
+	<center>
+		<h2>Online Calculator</h2>
+		<table>
+			<tr>
+				<td><input type="text" id="displayID" value=""></td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" onclick="back()" value="&larr;"></input>
+					<input type="button" onclick="clean()" value="C"></input>
+					<input type="button" onclick="square()" value="&radic;"></input>
+					<input type="button" onclick="percentage()" value="%"></input>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" onclick="num7()" value="7"></input>
+					<input type="button" onclick="num8()" value="8"></input>
+					<input type="button" onclick="num9()" value="9"></input>
+					<input type="button" onclick="div()" value="/"></input>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" onclick="num4()" value="4"></input>
+					<input type="button" onclick="num5()" value="5"></input>
+					<input type="button" onclick="num6()" value="6"></input>
+					<input type="button" onclick="mul()" value="*"></input>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" onclick="num1()" value="1"></input>
+					<input type="button" onclick="num2()" value="2"></input>
+					<input type="button" onclick="num3()" value="3"></input>
+					<input type="button" onclick="sub()" value="-"></input>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" onclick="zero()" value="0"></input>
+					<input type="button" onclick="dot()" value="."></input>
+					<input type="button" onclick="equal()" value="="></input>
+					<input type="button" onclick="add()" value="+"></input>
+				</td>
+			</tr>
+		</table>
+	</center>
+
+	<script type="text/javascript">
+		function back(){
+			var exp=document.getElementById("displayID").value;
+			document.getElementById("displayID").value=exp.substring(0,exp.length-1);
+		}
+		function clean(){
+			var exp=document.getElementById("displayID").value;
+			document.getElementById("displayID").value=exp.substring(0,exp.length-displayID);
+		}
+		function square(){
+			
+		}
+		function percentage(){
+			
+		}
+		function num7(){
+			document.getElementById("displayID").value+=7;
+		}
+		function num8(){
+			document.getElementById("displayID").value+=8;
+		}
+		function num9(){
+			document.getElementById("displayID").value+=9;
+		}
+		function div(){
+			document.getElementById("displayID").value+="/";
+		}
+		function num4(){
+			document.getElementById("displayID").value+=4;
+		}
+		function num5(){
+			document.getElementById("displayID").value+=5;
+		}
+		function num6(){
+			document.getElementById("displayID").value+=6;
+		}
+		function mul(){
+			document.getElementById("displayID").value+="*";
+		}
+		function num1(){
+			document.getElementById("displayID").value+=1;
+		}
+		function num2(){
+			document.getElementById("displayID").value+=2;
+		}
+		function num3(){
+			document.getElementById("displayID").value+=3;
+		}
+		function sub(){
+			document.getElementById("displayID").value+="-";
+		}
+		function zero(){
+			document.getElementById("displayID").value+=0;
+		}
+		function dot(){
+			document.getElementById("displayID").value+=".";	
+		}
+		function equal(){
+			var exp=document.getElementById("displayID").value;
+			if(exp){
+				document.getElementById("displayID").value=eval(exp);
+			}
+		}
+		function add(){
+			document.getElementById("displayID").value+="+";
+		}
+	</script>
+</body>
+</html>
