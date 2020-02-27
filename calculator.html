@@ -2,52 +2,61 @@
 <html>
 <head>
 	<title>Calculator</title>
+	<style type="text/css">
+		.button{
+			width: 50px;
+			height: 50px;
+			padding: 10px;
+			font-size: 25px;
+			cursor: pointer;
+		}
+	</style>
 </head>
 <body>
 	<center>
-		<h2>Online Calculator</h2>
+		<h1><u>Online Calculator</u></h1>
 		<table>
 			<tr>
-				<td><input type="text" id="displayID" value=""></td>
+				<td><input type="text" id="displayID" value="" style="width:207px; height: 30px; font-size: 25px;"></td>
 			</tr>
 			<tr>
 				<td>
-					<input type="button" onclick="back()" value="&larr;"></input>
-					<input type="button" onclick="clean()" value="C"></input>
-					<input type="button" onclick="square()" value="&radic;"></input>
-					<input type="button" onclick="percentage()" value="%"></input>
+					<input class="button" type="button" onclick="back()" value="&larr;"></input>
+					<input class="button" type="button" onclick="clean()" value="C"></input>
+					<input class="button" type="button" onclick="square()" value="&radic;"></input>
+					<input class="button" type="button" onclick="percentage()" value="%"></input>
 				</td>
 			</tr>
 			<tr>
 				<td>
-					<input type="button" onclick="num7()" value="7"></input>
-					<input type="button" onclick="num8()" value="8"></input>
-					<input type="button" onclick="num9()" value="9"></input>
-					<input type="button" onclick="div()" value="/"></input>
+					<input class="button" type="button" onclick="num7()" value="7"></input>
+					<input class="button" type="button" onclick="num8()" value="8"></input>
+					<input class="button" type="button" onclick="num9()" value="9"></input>
+					<input class="button" type="button" onclick="div()" value="/"></input>
 				</td>
 			</tr>
 			<tr>
 				<td>
-					<input type="button" onclick="num4()" value="4"></input>
-					<input type="button" onclick="num5()" value="5"></input>
-					<input type="button" onclick="num6()" value="6"></input>
-					<input type="button" onclick="mul()" value="*"></input>
+					<input class="button" type="button" onclick="num4()" value="4"></input>
+					<input class="button" type="button" onclick="num5()" value="5"></input>
+					<input class="button" type="button" onclick="num6()" value="6"></input>
+					<input class="button" type="button" onclick="mul()" value="*"></input>
 				</td>
 			</tr>
 			<tr>
 				<td>
-					<input type="button" onclick="num1()" value="1"></input>
-					<input type="button" onclick="num2()" value="2"></input>
-					<input type="button" onclick="num3()" value="3"></input>
-					<input type="button" onclick="sub()" value="-"></input>
+					<input class="button" type="button" onclick="num1()" value="1"></input>
+					<input class="button" type="button" onclick="num2()" value="2"></input>
+					<input class="button" type="button" onclick="num3()" value="3"></input>
+					<input class="button" type="button" onclick="sub()" value="-"></input>
 				</td>
 			</tr>
 			<tr>
 				<td>
-					<input type="button" onclick="zero()" value="0"></input>
-					<input type="button" onclick="dot()" value="."></input>
-					<input type="button" onclick="equal()" value="="></input>
-					<input type="button" onclick="add()" value="+"></input>
+					<input class="button" type="button" onclick="zero()" value="0"></input>
+					<input class="button" type="button" onclick="dot()" value="."></input>
+					<input class="button" type="button" onclick="equal()" value="="></input>
+					<input class="button" type="button" onclick="add()" value="+"></input>
 				</td>
 			</tr>
 		</table>
@@ -66,7 +75,7 @@
 			
 		}
 		function percentage(){
-			
+
 		}
 		function num7(){
 			document.getElementById("displayID").value+=7;
